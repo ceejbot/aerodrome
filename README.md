@@ -5,7 +5,7 @@ Nodecopter control abstractions: for your apocalyptic robot air force.
 
 ```javascript
 var aerogel = require('aerogel');
-var drone = new Aerogel();
+var drone = new aerogel.Drone();
 
 drone.takeoff()
 	.then(drone.moveToAltitude(3.0))

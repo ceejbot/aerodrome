@@ -1,5 +1,5 @@
-var Aerogel = require('../index');
-var drone = new Aerogel();
+var aerogel = require('../index');
+var drone = new aerogel.Drone();
 
 drone.takeoff()
 	.then(drone.moveToAltitude(3.0))
