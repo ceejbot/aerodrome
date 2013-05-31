@@ -4,4 +4,4 @@ var
 	Drone = require('./lib/drone')
 	;
 
-modules.exports = Drone;
+module.exports = Drone;
