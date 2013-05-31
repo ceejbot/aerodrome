@@ -15,6 +15,7 @@ Events/streams for repeating events (still images, video, nav data you've asked 
 Control primitives
 	heading/setHeading
 	altitude/setAltitude
+	battery level / emitted warnings on battery level
 	move (speed, time)
 	position/setPosition (relative to starting point) ? 
 
