@@ -1,0 +1,26 @@
+{
+	"name": "aerogel",
+	"version": "0.0.1",
+	"description": "nodecopter control abstractions: for your apocalyptic robot air force",
+	"main": "index.js",
+	"scripts":
+	{
+		"test": "mocha -R spec test/*.js"
+	},
+	"repository": "git://github.com/ceejbot/aerogel.git",
+	"keywords":
+	[
+		"nodecopter", "ar-drone"
+	],
+	"author": "C J Silverio <ceejceej@gmail.com>",
+	"license": "MIT",
+	"dependencies":
+	{
+		"ar-drone": "git://github.com/felixge/node-ar-drone.git",
+		"lodash": "~1.2.1",
+		"meld": "*",
+		"opencv": "~0.1.0",
+		"optimist": "~0.5.1",
+		"when": "*"
+	}
+}
