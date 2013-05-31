@@ -22,5 +22,10 @@
 		"opencv": "~0.1.0",
 		"optimist": "~0.5.1",
 		"when": "*"
+	},
+	"devDependencies":
+	{
+		"mocha": "*",
+		"chai": "*"
 	}
 }
