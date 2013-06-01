@@ -1,7 +1,7 @@
 aerogel
 =======
 
-Nodecopter control abstractions: for your apocalyptic robot air force.
+Nodecopter control abstractions for your apocalyptic robot air force.
 
 ```javascript
 var aerogel = require('aerogel');
@@ -62,6 +62,19 @@ Everything else.
 ## Drone API
 
 Docs TBD.
+
+### new areogel.Drone(*name*)
+
+Create a new drone object. The `name` parameter is used in log events and in file names for saved images & videos.
+
+### drone.client
+
+The underlying ar-drone client object is available in `drone.client` if you need more direct access.
+
+
+### drone.savePNGStream(*count*, *dir*)
+
+Save the next `count` pngs captured by the drone into the directory specified by `dir`. Images are named 
 
 ## Testing
 
