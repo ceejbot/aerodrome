@@ -31,7 +31,7 @@ Loggable events emitted as `log` events for listeners to log in whatever manner 
 
 Control primitives:
 
-* heading/setHeading
+* heading/1
 * altitude/setAltitude
 * battery level / emitted warnings on battery level
 * move (speed, time)
@@ -71,10 +71,25 @@ Create a new drone object. The `name` parameter is used in log events and in fil
 
 The underlying ar-drone client object is available in `drone.client` if you need more direct access.
 
+### drone.takeoff()
+
+Returns a promise that resolves when the takeoff is complete & the drone has settled.
+
+### drone.land()
+
+Resolves when the drone lands.
+
+### drone.turnToHeading(*degrees*)
+
+Resolves to the current heading when the drone reaches the desired heading. The heading is expressed as a float from -180 to 180. Negative numbers are a counterclockwise movement. Positive numbers are clockwise.
+
+### drone.moveToAltitude(*meters*)
+
+Resolves to the current altitude when the drone reaches the desired altitude. The altitude is a floating point number.
 
 ### drone.savePNGStream(*count*, *dir*)
 
-Save the next `count` pngs captured by the drone into the directory specified by `dir`. Images are named 
+Save the next `count` pngs captured by the drone into the directory specified by `dir`. Images are named `<drone-name>_<counter>.png`.
 
 ## Testing
 
@@ -82,7 +97,7 @@ Possible sans drone?
 
 ## Contributions
 
-Allman bracing, tabs to indent, camel case. Write tests in Mocha.
+Allman bracing, tabs to indent, camel case. Write tests in Mocha. [mocha-as-promised](https://github.com/domenic/mocha-as-promised) and [chai-as-promised](https://github.com/domenic/chai-as-promised/) are available.
 
 ## License
 
