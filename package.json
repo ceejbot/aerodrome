@@ -1,5 +1,5 @@
 {
-	"name": "aerogel",
+	"name": "aerodrome",
 	"version": "0.0.1",
 	"description": "nodecopter control abstractions: for your apocalyptic robot air force",
 	"main": "index.js",
@@ -8,7 +8,7 @@
 		"test": "mocha -R spec test/*.js",
 		"hint": "jshint lib/*.js"
 	},
-	"repository": "git://github.com/ceejbot/aerogel.git",
+	"repository": "git://github.com/ceejbot/aerodrome.git",
 	"keywords":
 	[
 		"nodecopter", "ar-drone"

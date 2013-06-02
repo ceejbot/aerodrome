@@ -7,7 +7,7 @@ var
 	should = chai.should()
 	;
 
-describe('aerogel', function()
+describe('aerodrome', function()
 {
 	it('doesn\'t have any tests yet');
 });

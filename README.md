@@ -1,11 +1,11 @@
-aerogel
+aerodrome
 =======
 
 Nodecopter control abstractions for your apocalyptic robot air force.
 
 ```javascript
-var aerogel = require('aerogel');
-var drone = new aerogel.Drone();
+var aerodrome = require('aerodrome');
+var drone = new aerodrome.Drone();
 
 drone.takeoff()
 	.then(drone.moveToAltitude(3.0))
