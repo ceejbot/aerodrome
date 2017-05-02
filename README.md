@@ -1,6 +1,8 @@
 aerodrome
 =======
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ceejbot/aerodrome.svg)](https://greenkeeper.io/)
+
 Nodecopter control abstractions for your apocalyptic robot air force.
 
 ```javascript
